@@ -1,5 +1,5 @@
 /* ================================
-   RESET E BASE E ESTILIZAÇÃO GLOBAL
+   RESET E BASE
 ================================ */
 * {
   margin: 0;
@@ -47,6 +47,7 @@ a {
 .navegacao {
   display: flex;
   gap: 32px;
+  align-items: center;
 }
 
 .navegacao a {
@@ -392,6 +393,120 @@ a {
 .rodape-logo {
   height: 40px;
   width: auto;
+}
+
+/* ================================
+   PLANOS
+================================ */
+.planos {
+  background-color: #F4F4F4;
+  padding: 80px 24px;
+}
+
+.planos-lista {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.plano-card {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  padding: 32px 24px;
+  flex: 1 1 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.plano-card.plano-destaque {
+  background-color: #1F2A1F;
+  border: 2px solid #2D8C4E;
+}
+
+.plano-tag {
+  display: inline-block;
+  background-color: #2D8C4E;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  align-self: flex-start;
+}
+
+.plano-nome {
+  font-size: 22px;
+  font-weight: 900;
+  color: #1F2A1F;
+}
+
+.plano-card.plano-destaque .plano-nome {
+  color: #FFFFFF;
+}
+
+.plano-descricao {
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.6;
+}
+
+.plano-card.plano-destaque .plano-descricao {
+  color: #AAAAAA;
+}
+
+.plano-preco {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.plano-valor {
+  font-size: 36px;
+  font-weight: 900;
+  color: #2D8C4E;
+}
+
+.plano-periodo {
+  font-size: 14px;
+  color: #999999;
+}
+
+.plano-itens {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.plano-itens li {
+  font-size: 14px;
+  color: #444444;
+  padding-left: 16px;
+  position: relative;
+}
+
+.plano-itens li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 6px;
+  height: 6px;
+  background-color: #2D8C4E;
+  border-radius: 50%;
+}
+
+.plano-card.plano-destaque .plano-itens li {
+  color: #CCCCCC;
 }
 
 /* ================================
